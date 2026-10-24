@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit",
-    "test:routes": "node ../test-routes.mjs"
+    "test:routes": "node scripts/verify-routes.mjs"
   },
   "dependencies": {
     "next": "^15.1.7",

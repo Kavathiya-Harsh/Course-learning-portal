@@ -104,9 +104,11 @@ course-learning-portal/
 │   └── types/
 │       ├── course.ts                                       # TypeScript interfaces for Course, Module, and Lesson
 │       └── topic.ts                                        # TypeScript interfaces for TopicTrack and TopicModule
+├── scripts/
+│   └── verify-routes.mjs                               # Automated route and curriculum data integrity test suite
 ├── package.json
 ├── tsconfig.json
-└── next.config.ts
+└── next.config.mjs
 ```
 
 ---
@@ -158,9 +160,10 @@ Open your browser and navigate to:
 http://localhost:3000
 ```
 
-### Step 3: Verify TypeScript Types & Build
-To verify that all types and pages compile cleanly:
+### Step 3: Verify TypeScript Types & Route Integrity
+To verify that all types and pages compile cleanly and validate route integrity:
 ```bash
+npm run test:routes
 npm run lint
 npm run build
 ```
